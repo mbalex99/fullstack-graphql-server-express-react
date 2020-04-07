@@ -26,6 +26,8 @@ const app = express();
 // important that this is registered here
 server.applyMiddleware({ app });
 
+
+// catch all to render the client
 if (NODE_ENV == "development") {
   const webpack = require("webpack");
   const config = require("../../webpack.config.js");
@@ -43,8 +45,9 @@ if (NODE_ENV == "development") {
   );
   app.use(require("webpack-hot-middleware")(compiler));
 }
-
 if (NODE_ENV === "production") {
+  app.use(history())
+  app.use('/', express.static('dist/client'))
 }
 
 app.listen({ port: PORT }, () => {

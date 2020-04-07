@@ -6,9 +6,10 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "npm run clean && npm run build:server && npm run build:client",
-    "build:client": "webpack",
-    "build:server": "tsc --project tsconfig.server.json && cp src/server/schema.graphql dist/server",
-    "dev": "nodemon src/server/index.ts"
+    "build:client": "rm -rf dist/client && webpack",
+    "build:server": "rm -rf dist/client && tsc --project tsconfig.server.json && cp src/server/schema.graphql dist/server",
+    "dev": "nodemon src/server/index.ts",
+    "start": "node dist/server/index.js"
   },
   "author": "",
   "license": "ISC",
