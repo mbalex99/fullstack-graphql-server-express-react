@@ -1,0 +1,15 @@
+
+
+type Challenge {
+  id: Int
+  name: String
+  notes: String
+}
+
+type User {
+  id: Int
+}
+
+type Query {
+  hello: String
+}
