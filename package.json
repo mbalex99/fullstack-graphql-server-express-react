@@ -20,7 +20,7 @@
     "apollo-server-express": "^2.11.0",
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.2.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "knex": "^0.20.13",
     "react": "^16.13.1",
     "react-dom": "npm:@hot-loader/react-dom",
