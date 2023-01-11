@@ -21,7 +21,7 @@
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.2.1",
     "express": "^4.17.1",
-    "knex": "^0.20.13",
+    "knex": "^2.4.0",
     "react": "^16.13.1",
     "react-dom": "npm:@hot-loader/react-dom",
     "react-hot-loader": "^4.12.20",
